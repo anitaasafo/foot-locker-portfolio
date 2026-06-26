@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporate Learning & Development Portal | Anita Afriyie, MBA, MSEd</title>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+cobalt: {
+50: '#f0f5ff',
+100: '#e0eaff',
+600: '#0047AB',
+700: '#003ba1',
+900: '#0a235c',
+},
+turquoise: {
+50: '#ecfdf5',
+100: '#d1fae5',
+600: '#0D9488',
+700: '#0f766e',
+},
+orangeAccent: {
+50: '#fff7ed',
+500: '#EA580C',
+600: '#d97706',
+},
+paperBg: '#FDFCF7',
+},
+fontFamily: {
+serif: ['Merriweather', 'Georgia', 'serif'],
+}
+}
+}
+}
+</script>
+
+<!-- Google Fonts: Merriweather for a highly professional serif style -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+body {
+font-family: 'Merriweather', Georgia, serif;
+}
+.custom-scrollbar::-webkit-scrollbar {
+width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+background: #fdfcf7;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+background: #0047AB;
+border-radius: 3px;
+}
+</style>
+</head>
+<body class="bg-paperBg text-gray-900 min-h-screen flex flex-col antialiased selection:bg-cobalt-600 selection:text-white">
+
+<!-- HEADER & BRANDING -->
+<header class="bg-cobalt-900 text-white border-b-4 border-turquoise-600 sticky top-0 z-50 shadow-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Portal Branding -->
+<div class="flex items-center space-x-3 cursor-pointer" onclick="goToDashboard()">
+<div class="w-10 h-10 bg-turquoise-600 rounded-lg flex items-center justify-center text-white font-black text-xl shadow-inner">
+Ω
+</div>
+<div>
+<span class="font-bold text-lg sm:text-xl tracking-tight block">EXECUTIVE E-LEARNING PORTAL</span>
+<span class="text-xs text-turquoise-100 italic block font-light -mt-1">Instructional Innovation & Development</span>
+</div>
+</div>
+<!-- Author Badge -->
+<div class="hidden md:flex flex-col text-right">
+<p class="text-xs text-turquoise-100 uppercase tracking-widest font-bold">Principal Author</p>
+<p class="text-sm font-bold text-orangeAccent-500">Anita Afriyie, MBA, MSEd</p>
+</div>
+</div>
+</header>
+
+<!-- DASHBOARD / PORTAL VIEW -->
+<main id="dashboardView" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+<!-- Hero / Welcome Panel -->
+<div class="bg-gradient-to-r from-cobalt-900 via-cobalt-700 to-turquoise-700 rounded-2xl p-8 sm:p-12 text-white shadow-xl mb-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-80 h-80 bg-orangeAccent-500 opacity-10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+<div class="relative z-10 max-w-4xl">
+<span class="bg-orangeAccent-500 text-white text-xs font-bold tracking-widest px-4 py-1.5 rounded-full uppercase italic">
+Executive Masterclass Curriculum
+</span>
+<h1 class="text-3xl sm:text-5xl font-black mt-6 tracking-tight leading-tight">
+Inclusive Culture & Strategic Retail Logistics
+</h1>
+<p class="text-slate-100 mt-6 text-base sm:text-lg leading-relaxed max-w-3xl font-light">
+Welcome to your professional learning hub. Designed under the academic and professional leadership of <strong class="text-orangeAccent-500">Anita Afriyie, MBA, MSEd</strong>, these interactive modules explore systemic cultural accessibility and the mathematical psychology driving modern retail operations.
+</p>
+<div class="mt-8 flex flex-wrap gap-4">
+<a href="#courses-grid" class="bg-orangeAccent-500 hover:bg-orangeAccent-600 text-white font-bold px-6 py-3 rounded-xl transition duration-200 text-sm shadow-md">
+Explore Modules Below
+</a>
+<button onclick="scrollToNextStepsGlobal()" class="bg-transparent border border-white hover:bg-white/10 text-white font-bold px-6 py-3 rounded-xl transition duration-200 text-sm">
+View Immediate Action Steps
+</button>
+</div>
+</div>
+</div>
+
+<!-- Core Content Modules Section -->
+<div id="courses-grid" class="scroll-mt-24">
+<div class="border-b border-gray-200 pb-5 mb-8">
+<h2 class="text-2xl sm:text-3xl font-bold text-cobalt-900">Available Professional Modules</h2>
+<p class="text-gray-600 text-sm mt-1">Track your progress and click to launch each interactive course.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+
+<!-- Card 1: Neurodivergence in the Workplace -->
+<div class="bg-white rounded-2xl border-t-8 border-cobalt-600 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group p-6 sm:p-8">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-cobalt-600 bg-cobalt-50 px-3 py-1 rounded-full">Module 01</span>
+<span id="c1-badge" class="text-xs font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">0% Completed</span>
+</div>
+<h3 class="text-2xl font-bold text-cobalt-900 group-hover:text-cobalt-600 transition-colors duration-200">Neurodivergence in the Workplace</h3>
+<p class="text-gray-600 mt-4 text-sm leading-relaxed flex-grow">
+Learn to build cultural architecture accommodating administrative staff, executive suites, field prospects, and diverse customer ecosystems. Expand systemic empathy into structural success.
+</p>
+<div class="mt-6 border-t border-gray-100 pt-5 flex items-center justify-between">
+<span class="text-xs text-gray-500 italic">Core Inclusion Curriculum</span>
+<button onclick="launchCourse('neuro')" class="bg-cobalt-600 hover:bg-cobalt-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition duration-200 shadow flex items-center space-x-2">
+<span>Launch Course</span>
+<span class="text-sm">→</span>
+</button>
+</div>
+</div>
+
+<!-- Card 2: Economic Psychology & PAR -->
+<div class="bg-white rounded-2xl border-t-8 border-turquoise-600 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group p-6 sm:p-8">
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold uppercase tracking-widest text-turquoise-600 bg-turquoise-50 px-3 py-1 rounded-full">Module 02</span>
+<span id="c2-badge" class="text-xs font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">0% Completed</span>
+</div>
+<h3 class="text-2xl font-bold text-turquoise-700 group-hover:text-turquoise-600 transition-colors duration-200">Economic Psychology & PAR</h3>
+<p class="text-gray-600 mt-4 text-sm leading-relaxed flex-grow">
+Unpack Planning, Allocation, and Replenishment (PAR). Master why inventory must match localized geographical, economic, and demographic consumer footprints using behavioral psychology.
+</p>
+<div class="mt-6 border-t border-gray-100 pt-5 flex items-center justify-between">
+<span class="text-xs text-gray-500 italic">Logistics & Behavioral Economics</span>
+<button onclick="launchCourse('econ')" class="bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold text-xs px-5 py-3 rounded-xl transition duration-200 shadow flex items-center space-x-2">
+<span>Launch Course</span>
+<span class="text-sm">→</span>
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Dynamic Learning Summary -->
+<div class="bg-orangeAccent-50 border border-orangeAccent-500/20 rounded-2xl p-6 sm:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div>
+<h3 class="text-xl font-bold text-cobalt-900">Your Portal Credentials</h3>
+<p class="text-xs text-gray-600 mt-1">Complete all exercises to access your customized Executive Learning Planner.</p>
+<!-- Live Interactive Dynamic Progress Indicators -->
+<div class="mt-4 flex flex-wrap gap-4 text-xs font-bold">
+<span class="bg-white px-3 py-1 rounded border border-gray-200">Diversity Module: <span id="dash-c1-status" class="text-orangeAccent-500">Not Started</span></span>
+<span class="bg-white px-3 py-1 rounded border border-gray-200">Logistics Module: <span id="dash-c2-status" class="text-orangeAccent-500">Not Started</span></span>
+</div>
+</div>
+<button id="cert-trigger" onclick="generateCertificate()" class="bg-orangeAccent-500 hover:bg-orangeAccent-600 text-white text-xs font-bold px-6 py-3 rounded-xl transition duration-200 shadow self-start md:self-center opacity-50 cursor-not-allowed" disabled>
+Generate Certificate of Completion
+</button>
+</div>
+</div>
+
+</main>
+
+
+<!-- NEURODIVERGENCE IN THE WORKPLACE COURSE VIEW -->
+<div id="neuroCourseView" class="hidden flex-grow flex flex-col md:flex-row">
+
+<!-- Course Sidebar -->
+<aside class="w-full md:w-80 bg-white border-r border-gray-200 flex flex-col shrink-0">
+<div class="p-6 border-b border-gray-100 flex flex-col">
+<button onclick="goToDashboard()" class="text-xs font-bold text-cobalt-600 hover:text-cobalt-700 flex items-center space-x-1.5 mb-4 group">
+<span>← Back to Dashboard</span>
+</button>
+<h2 class="text-lg font-bold text-cobalt-900 leading-tight">Neurodivergence in the Workplace</h2>
+<p class="text-xs text-gray-500 mt-1">Instructor: Anita Afriyie, MBA, MSEd</p>
+
+<!-- Progress Bar -->
+<div class="mt-6">
+<div class="flex justify-between text-xs font-semibold text-gray-600 mb-1">
+<span>Progress Indicator</span>
+<span id="neuroProgressPercent">0%</span>
+</div>
+<div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+<div id="neuroProgressBar" class="bg-cobalt-600 h-full w-0 transition-all duration-500"></div>
+</div>
+</div>
+</div>
+
+<!-- Navigation Links -->
+<nav class="flex-grow overflow-y-auto p-4 space-y-1.5 custom-scrollbar">
+<button onclick="scrollToBlock('neuro-block-1')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-cobalt-600 bg-cobalt-50 border border-cobalt-100 transition-all" id="btn-neuro-block-1">
+<span>1. Structural Culture & Executives</span>
+<span id="chk-neuro-block-1" class="text-cobalt-600">●</span>
+</button>
+<button onclick="scrollToBlock('neuro-block-2')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-neuro-block-2">
+<span>2. Operational & Administrative Care</span>
+<span id="chk-neuro-block-2" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('neuro-block-3')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-neuro-block-3">
+<span>3. Prospects, Candidates & Recruitment</span>
+<span id="chk-neuro-block-3" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('neuro-block-4')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-neuro-block-4">
+<span>4. Sensory-friendly Customer Ecosystems</span>
+<span id="chk-neuro-block-4" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('neuro-block-5')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-neuro-block-5">
+<span>5. Interactive Knowledge Assessment</span>
+<span id="chk-neuro-block-5" class="text-gray-300">○</span>
+</button>
+</nav>
+</aside>
+
+<!-- Main Scrollable Course Content -->
+<main class="flex-grow overflow-y-auto bg-paperBg h-[calc(100vh-5rem)] p-4 sm:p-12 space-y-12 custom-scrollbar" id="neuroContentArea">
+
+<!-- Block 1: Structural Culture & Executives -->
+<section id="neuro-block-1" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300">
+<span class="text-xs font-bold text-cobalt-600 uppercase tracking-widest">Section 1</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Executive Leadership and the Neurodiverse Paradigm</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm sm:text-base">
+True systemic inclusivity begins in the C-suite. Under the conceptual guidance of Anita Afriyie, MBA, MSEd, we define neurodiversity not as a series of clinical deficits requiring remediation, but as variations in neurological wiring—encompassing autism, ADHD, dyslexia, dyscalculia, and cognitive-processing variations.
+</p>
+
+<div class="my-6 bg-cobalt-50 border-l-4 border-cobalt-600 p-5 rounded-r-xl">
+<p class="text-xs italic text-cobalt-900 font-bold">
+Executive Directive: "To build systemic profitability and intellectual capital, leadership must actively design corporate landscapes that embrace neurotype variation. A workforce with diverse thought structures solves problems exponentially faster than a cognitively uniform peer."
+</p>
+</div>
+
+<h3 class="text-lg font-bold mt-8 text-cobalt-900">Accommodating the Upper Echelons</h3>
+<p class="text-gray-700 mt-2 text-sm leading-relaxed">
+High-performing executives are often hyper-focused or possess profound cognitive pattern matching. Organizations must ensure that communications, performance metrics, and workflow expectations are output-driven rather than strictly procedural.
+</p>
+
+<button onclick="markBlockComplete('neuro', 'neuro-block-1')" class="mt-8 w-full bg-cobalt-600 hover:bg-cobalt-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 2: Operational & Administrative Care -->
+<section id="neuro-block-2" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-cobalt-600 uppercase tracking-widest">Section 2</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Operational Support and Administrative Staff</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+Administrative environments are heavy on data, continuous scheduling, and routine structures. Standard procedures often overlook the cognitive load experienced by staff with ADHD, autism, or dyslexia.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+<div class="bg-turquoise-50 p-4 rounded-xl border border-turquoise-100">
+<h4 class="font-bold text-turquoise-700 text-xs">For Attention Variations (ADHD)</h4>
+<p class="text-xs text-gray-600 mt-1">Transition from sprawling text emails to compartmentalized, bulleted milestone maps. Implement asynchronous communication platforms to empower deep focus periods.</p>
+</div>
+<div class="bg-turquoise-50 p-4 rounded-xl border border-turquoise-100">
+<h4 class="font-bold text-turquoise-700 text-xs">For Reading/Writing Differences</h4>
+<p class="text-xs text-gray-600 mt-1">Normalize accessibility tools such as text-to-speech software, automated subtitling, and dyslexic-friendly formatting as institutional standards, not specialized exceptions.</p>
+</div>
+</div>
+
+<button onclick="markBlockComplete('neuro', 'neuro-block-2')" class="mt-8 w-full bg-cobalt-600 hover:bg-cobalt-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 3: Prospects, Candidates & Recruitment -->
+<section id="neuro-block-3" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-cobalt-600 uppercase tracking-widest">Section 3</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Engaging and Cultivating Fields of Prospects</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+Recruitment processes are historical filters for neurotypical social cues. Handshakes, sustained direct eye contact, and rapid verbal improv are often heavily weighted, masking high-impact technical or strategic capability.
+</p>
+
+<!-- Interactive Candidate Recruitment Tool -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200 my-6">
+<h4 class="text-xs font-bold text-cobalt-900 uppercase tracking-widest mb-2">Interactive Interview Adaptation Tool</h4>
+<p class="text-xs text-gray-500 mb-4">Click below to redesign recruitment frameworks:</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button onclick="toggleRecruitDetail('questions')" class="p-3 bg-white hover:bg-cobalt-50 border border-gray-200 rounded-lg text-left text-xs font-semibold focus:outline-none transition-all">
+💬 Question Prep
+</button>
+<button onclick="toggleRecruitDetail('skills')" class="p-3 bg-white hover:bg-cobalt-50 border border-gray-200 rounded-lg text-left text-xs font-semibold focus:outline-none transition-all">
+🛠 Technical Assessment
+</button>
+<button onclick="toggleRecruitDetail('onboarding')" class="p-3 bg-white hover:bg-cobalt-50 border border-gray-200 rounded-lg text-left text-xs font-semibold focus:outline-none transition-all">
+🤝 Onboarding Design
+</button>
+</div>
+
+<div id="recruitDetailBox" class="mt-4 p-4 bg-cobalt-50 border border-cobalt-100 rounded-lg text-xs text-cobalt-900 hidden leading-relaxed">
+<!-- Populated via script -->
+</div>
+</div>
+
+<button onclick="markBlockComplete('neuro', 'neuro-block-3')" class="mt-8 w-full bg-cobalt-600 hover:bg-cobalt-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 4: Sensory-friendly Customer Ecosystems -->
+<section id="neuro-block-4" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-cobalt-600 uppercase tracking-widest">Section 4</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Serving Our Customers in Key Physical Areas</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+In public service environments, retail storefronts, or corporate client hubs, physical design directly impacts the customer’s neurological equilibrium. Over-stimulation (flashing screens, acoustic resonance, crowded corridors) triggers cognitive fatigue, reducing engagement and customer trust.
+</p>
+
+<h3 class="text-sm font-bold mt-6 text-turquoise-700 uppercase tracking-wider">Systemic Environmental Controls</h3>
+<ul class="list-disc pl-5 mt-3 space-y-2 text-xs text-gray-600">
+<li><strong>Sensory Respite Zones:</strong> Set aside designated areas characterized by soft neutral tones, dimmable indirect lighting, and acoustic dampening.</li>
+<li><strong>Predictable Interaction Cycles:</strong> Provide visual and narrative maps of complex layouts to minimize anxiety.</li>
+<li><strong>Diverse Interface Frameworks:</strong> Deploy digital interfaces with screen reader optimization, adjustable contrast, and non-flashing graphics.</li>
+</ul>
+
+<button onclick="markBlockComplete('neuro', 'neuro-block-4')" class="mt-8 w-full bg-cobalt-600 hover:bg-cobalt-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 5: Interactive Knowledge Assessment -->
+<section id="neuro-block-5" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-cobalt-600 uppercase tracking-widest">Section 5</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Interactive Knowledge Assessment</h2>
+<p class="text-xs text-gray-500 mt-2">Test your mastery of workplace neurodivergent accommodations.</p>
+
+<div id="neuro-quiz-container" class="mt-8 space-y-8">
+
+<!-- Q1 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">1. Under Anita Afriyie's paradigm, how should administrative communication be adapted for ADHD staff?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq1" value="a" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>A) By holding hourly verbal check-ins to monitor compliance.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq1" value="b" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>B) Transitioning to compartmentalized, bulleted milestone maps combined with asynchronous communication.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq1" value="c" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>C) Standardizing on visual metaphorical games during team huddles.</span>
+</label>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">2. Why does typical rapid verbal improvisation in traditional interviews act as a systemic filter?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq2" value="a" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>A) Because highly capable candidates with communication differences can be filtered out over social performance expectations.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq2" value="b" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>B) Because it is a highly accurate predictor of operational performance.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq2" value="c" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>C) It allows candidates with dyslexia to read faster under social pressure.</span>
+</label>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">3. In designing sensory-friendly customer spaces, which of the following is optimal?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq3" value="a" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>A) Increasing background acoustic volume to mask other noises.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq3" value="b" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>B) Eliminating physical directional maps to encourage organic client wandering.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq3" value="c" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>C) Providing quiet, neutral, acoustically dampened respite zones with indirect lighting.</span>
+</label>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">4. What is the fundamental concept of the Neurodiverse paradigm?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq4" value="a" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>A) It views cognitive variations as healthy, natural evolutionary differences in human wiring.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq4" value="b" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>B) It insists that all office operations are strictly standardized.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq4" value="c" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>C) It only provides resources for employees in junior-level clerical positions.</span>
+</label>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">5. How does a company actively benefit from welcoming neurodiverse candidates?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq5" value="a" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>A) Through tax credits only, with little impact on work output.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq5" value="b" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>B) Accelerating performance because varied perspectives challenge stale status quos and find unique insights.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-cobalt-50 cursor-pointer transition">
+<input type="radio" name="nq5" value="c" class="mt-0.5 text-cobalt-600 focus:ring-cobalt-500">
+<span>C) By enforcing stricter eye-contact protocols at all client meetings.</span>
+</label>
+</div>
+</div>
+
+</div>
+
+<button onclick="evaluateNeuroQuiz()" class="mt-8 w-full bg-orangeAccent-500 hover:bg-orangeAccent-600 text-white font-bold py-4 rounded-xl transition duration-200 shadow text-xs uppercase tracking-wider">
+Submit Answers
+</button>
+
+<div id="neuroFeedbackCard" class="mt-6 p-6 rounded-xl text-sm hidden"></div>
+</section>
+
+</main>
+</div>
+
+
+<!-- ECONOMIC PSYCHOLOGY & PAR COURSE VIEW -->
+<div id="econCourseView" class="hidden flex-grow flex flex-col md:flex-row">
+
+<!-- Course Sidebar -->
+<aside class="w-full md:w-80 bg-white border-r border-gray-200 flex flex-col shrink-0">
+<div class="p-6 border-b border-gray-100 flex flex-col">
+<button onclick="goToDashboard()" class="text-xs font-bold text-turquoise-600 hover:text-turquoise-700 flex items-center space-x-1.5 mb-4 group">
+<span>← Back to Dashboard</span>
+</button>
+<h2 class="text-lg font-bold text-turquoise-700 leading-tight font-serif">Economic Psychology & PAR</h2>
+<p class="text-xs text-gray-500 mt-1">Instructor: Anita Afriyie, MBA, MSEd</p>
+
+<!-- Progress Bar -->
+<div class="mt-6">
+<div class="flex justify-between text-xs font-semibold text-gray-600 mb-1">
+<span>Progress Indicator</span>
+<span id="econProgressPercent">0%</span>
+</div>
+<div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+<div id="econProgressBar" class="bg-turquoise-600 h-full w-0 transition-all duration-500"></div>
+</div>
+</div>
+</div>
+
+<!-- Navigation Links -->
+<nav class="flex-grow overflow-y-auto p-4 space-y-1.5 custom-scrollbar">
+<button onclick="scrollToBlock('econ-block-1')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-turquoise-700 bg-turquoise-50 border border-turquoise-100 transition-all" id="btn-econ-block-1">
+<span>1. The Psychology of Consumer Scarcity</span>
+<span id="chk-econ-block-1" class="text-turquoise-600">●</span>
+</button>
+<button onclick="scrollToBlock('econ-block-2')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-econ-block-2">
+<span>2. Demographics, Geographics & Climate</span>
+<span id="chk-econ-block-2" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('econ-block-3')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-econ-block-3">
+<span>3. Interactive PAR Inventory Simulator</span>
+<span id="chk-econ-block-3" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('econ-block-4')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-econ-block-4">
+<span>4. Adaptive Logistics Replenishment</span>
+<span id="chk-econ-block-4" class="text-gray-300">○</span>
+</button>
+<button onclick="scrollToBlock('econ-block-5')" class="w-full text-left px-4 py-3 rounded-xl text-xs font-bold hover:bg-gray-50 flex items-center justify-between text-gray-700 transition-all" id="btn-econ-block-5">
+<span>5. Advanced Logistics Assessment</span>
+<span id="chk-econ-block-5" class="text-gray-300">○</span>
+</button>
+</nav>
+</aside>
+
+<!-- Main Scrollable Course Content -->
+<main class="flex-grow overflow-y-auto bg-paperBg h-[calc(100vh-5rem)] p-4 sm:p-12 space-y-12 custom-scrollbar" id="econContentArea">
+
+<!-- Block 1: The Psychology of Consumer Scarcity -->
+<section id="econ-block-1" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300">
+<span class="text-xs font-bold text-turquoise-700 uppercase tracking-widest">Section 1</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">The Psychology of Choice, Scarcity & Social Affinity</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+Traditional logistics treats inventory as simple arithmetic. Under the design of Anita Afriyie, MBA, MSEd, we dissect logistics through **Economic Psychology**. A consumer walking into a store isn’t simply evaluating utility; their brain navigates heuristics of social prestige, choice fatigue, and localized subcultural expectations.
+</p>
+
+<div class="my-6 bg-turquoise-50 p-5 rounded-r-xl border-l-4 border-turquoise-600">
+<h4 class="font-bold text-turquoise-700 text-xs">The Choice Paradox in Retail</h4>
+<p class="text-xs text-gray-600 mt-1">
+Over-assortment causes cognitive friction, slowing the path to conversion. High-efficiency store profiles utilize localized product curations, creating a sense of personalized abundance while decreasing inventory carrying costs.
+</p>
+</div>
+
+<button onclick="markBlockComplete('econ', 'econ-block-1')" class="mt-8 w-full bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 2: Demographics, Geographics & Climate -->
+<section id="econ-block-2" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-turquoise-700 uppercase tracking-widest">Section 2</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Geographic & Demographic Alignment</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+Why does a store in an upscale transit hub inventory completely different items than an expansive suburban retail outlet? The answer lies in demographic and geographic mapping:
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 text-xs">
+<div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+<div class="text-xl mb-2">📍</div>
+<h4 class="font-bold text-cobalt-900">Geographic Micro-Climates</h4>
+<p class="text-gray-600 mt-1">Spatio-temporal factors like rainfall, temperature patterns, and walkability indexes directly drive product selection. Heavy apparel in maritime rain zones is highly active; high-tech meshes fail in mud-prone environments.</p>
+</div>
+<div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+<div class="text-xl mb-2">📈</div>
+<h4 class="font-bold text-cobalt-900">Demographic Footprints</h4>
+<p class="text-gray-600 mt-1">Socioeconomic groupings, average commute patterns (vehicular vs. public transit), and generational density dictate whether inventory features premium lifestyle, functional, or budget-focused lines.</p>
+</div>
+</div>
+
+<button onclick="markBlockComplete('econ', 'econ-block-2')" class="mt-8 w-full bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 3: Interactive PAR Inventory Simulator -->
+<section id="econ-block-3" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-turquoise-700 uppercase tracking-widest">Section 3</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">The PAR Inventory Allocation Simulator</h2>
+<p class="text-gray-600 mt-2 text-sm leading-relaxed">
+Test your strategic alignment skills. Choose a regional geographic profile below, distribute your logistics budget across three product sectors, and evaluate your community market score!
+</p>
+
+<!-- Interactive Widget Area -->
+<div class="mt-8 bg-gray-50 p-6 rounded-2xl border border-gray-200">
+
+<div class="mb-6">
+<label class="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Select Regional Landscape</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<button onclick="setEconProfile('coastal')" id="sim-prof-coastal" class="p-3 bg-turquoise-600 text-white text-xs font-bold rounded-xl transition-all border border-transparent shadow">
+⚓ Coastal High-Wealth Hub
+</button>
+<button onclick="setEconProfile('transit')" id="sim-prof-transit" class="p-3 bg-white text-gray-700 text-xs font-semibold rounded-xl transition-all border border-gray-200 hover:bg-gray-100">
+🚆 Rapid Urban Transit Zone
+</button>
+<button onclick="setEconProfile('mountain')" id="sim-prof-mountain" class="p-3 bg-white text-gray-700 text-xs font-semibold rounded-xl transition-all border border-gray-200 hover:bg-gray-100">
+🏔 Mountain Outdoor Outpost
+</button>
+</div>
+</div>
+
+<!-- Inventory Range Sliders -->
+<div class="space-y-4 mb-6">
+<div class="bg-white p-4 rounded-xl border border-gray-100">
+<div class="flex justify-between text-xs font-bold mb-1 text-gray-700">
+<span>🌟 Premium Lifestyle & High-Status Goods</span>
+<span id="premiumVal">40%</span>
+</div>
+<input type="range" id="premiumSlider" min="0" max="100" value="40" oninput="updateEconSliders('premium')" class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-turquoise-600">
+</div>
+
+<div class="bg-white p-4 rounded-xl border border-gray-100">
+<div class="flex justify-between text-xs font-bold mb-1 text-gray-700">
+<span>⚡ Practical / Daily-Commuter Gear</span>
+<span id="practicalVal">30%</span>
+</div>
+<input type="range" id="practicalSlider" min="0" max="100" value="30" oninput="updateEconSliders('practical')" class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-turquoise-600">
+</div>
+
+<div class="bg-white p-4 rounded-xl border border-gray-100">
+<div class="flex justify-between text-xs font-bold mb-1 text-gray-700">
+<span>🌧 Specialized Climate Protection (Waterproof / Cold-Resistant)</span>
+<span id="climateVal">30%</span>
+</div>
+<input type="range" id="climateSlider" min="0" max="100" value="30" oninput="updateEconSliders('climate')" class="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-turquoise-600">
+</div>
+</div>
+
+<!-- Interactive Results Panels -->
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-white p-4 rounded-xl border border-gray-100 text-center">
+<span class="text-[10px] text-gray-400 font-bold uppercase block">Budget Cap</span>
+<p class="text-base font-black text-gray-900 mt-1">100% Fully Allocated</p>
+</div>
+<div class="bg-white p-4 rounded-xl border border-gray-100 text-center">
+<span class="text-[10px] text-gray-400 font-bold uppercase block">Community Fit Rating</span>
+<p id="simScoreDisplay" class="text-base font-black text-turquoise-600 mt-1">Evaluating...</p>
+</div>
+</div>
+
+<button onclick="calculateEconSimulator()" class="w-full bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold py-3 rounded-xl transition duration-200 text-xs uppercase tracking-wider">
+Execute Runrate Projections
+</button>
+
+<div id="simFeedbackBox" class="mt-4 p-4 rounded-xl text-xs leading-relaxed hidden"></div>
+</div>
+
+<button onclick="markBlockComplete('econ', 'econ-block-3')" class="mt-8 w-full bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 4: Adaptive Logistics Replenishment -->
+<section id="econ-block-4" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-turquoise-700 uppercase tracking-widest">Section 4</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Adaptive Replenishment & Replenishment Loops</h2>
+
+<p class="text-gray-700 mt-6 leading-relaxed text-sm">
+Traditional replenishment cycles wait for historical shelf deficits before initiating shipment. Advanced PAR algorithms shift logistics to predictive triggers. By combining real-time geographic trends (such as early frost forecasts or urban rail service changes) with instant check-out data, local hub managers trigger adaptive logistics.
+</p>
+
+<div class="my-6 p-5 bg-orangeAccent-50 rounded-xl border border-orangeAccent-500/20 text-xs">
+<h4 class="font-bold text-orangeAccent-500">The PAR Cycle Checklist:</h4>
+<p class="text-gray-600 mt-1">1. <strong>Planning:</strong> Continuous macro-economic parsing of target geographical neighborhoods.<br>2. <strong>Allocation:</strong> Precise matching of initial product mix relative to demographic income density.<br>3. <strong>Replenishment:</strong> Micro-triggered stock movements bypassing standard seasonal timelines to maximize inventory turn speed.</p>
+</div>
+
+<button onclick="markBlockComplete('econ', 'econ-block-4')" class="mt-8 w-full bg-turquoise-600 hover:bg-turquoise-700 text-white font-bold py-3.5 rounded-xl transition duration-200 shadow-sm text-xs uppercase tracking-wider">
+Mark Complete & Continue
+</button>
+</section>
+
+<!-- Block 5: Advanced Logistics Assessment -->
+<section id="econ-block-5" class="max-w-3xl mx-auto bg-white border border-gray-100 shadow-sm rounded-2xl p-6 sm:p-10 transition-all duration-300 opacity-60">
+<span class="text-xs font-bold text-turquoise-700 uppercase tracking-widest">Section 5</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 text-cobalt-900 leading-tight">Advanced Logistics Assessment</h2>
+<p class="text-xs text-gray-500 mt-2">Validate your competence in behavioral economics and geographic logistics replenishment.</p>
+
+<div id="econ-quiz-container" class="mt-8 space-y-8">
+
+<!-- Q1 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">1. How does Economic Psychology define choice overload on consumers?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq1" value="a" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>A) It increases consumer loyalty and triggers faster purchasing decisions.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq1" value="b" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>B) It triggers cognitive friction and choice fatigue, slowing inventory turn cycles.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq1" value="c" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>C) It encourages the allocation of heavy winter boots in warm environments.</span>
+</label>
+</div>
+</div>
+
+<!-- Q2 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">2. In allocating inventory for an upscale Coastal Hub, which balance index is optimal?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq2" value="a" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>A) Minimizing lifestyle products while dedicating 90% of budget to heavy-duty rain protection.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq2" value="b" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>B) Allocating a high ratio of Premium Lifestyle items to match high-status social heuristics, leaving minimal room for extreme cold gear.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq2" value="c" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>C) Stocking identical volume rations in every zip code to preserve simple accounting lines.</span>
+</label>
+</div>
+</div>
+
+<!-- Q3 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">3. What does "Planning" focus on in the standard PAR model?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq3" value="a" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>A) Calculating immediate discount velocities for clearing damaged packaging.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq3" value="b" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>B) Systematic macroanalysis of local neighborhoods, climate trends, and regional demographics.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq3" value="c" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>C) Relying purely on the intuition of local storefront employees.</span>
+</label>
+</div>
+</div>
+
+<!-- Q4 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">4. How does "Adaptive Replenishment" improve upon historical models?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq4" value="a" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>A) By waiting for complete inventory depletion before starting logistics routes.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq4" value="b" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>B) By triggering real-time logistical stock movements based on shifting local climatic, socio-demographic, and transit indicators.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq4" value="c" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>C) By charging higher premiums to urban demographic sectors.</span>
+</label>
+</div>
+</div>
+
+<!-- Q5 -->
+<div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+<p class="font-bold text-sm text-cobalt-900">5. Why are microclimate factors like humidity and rainfall crucial to geographical allocations?</p>
+<div class="space-y-2 mt-4 text-xs">
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq5" value="a" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>A) Because they dictate physical product degradation and determine localized demand for protective gear.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq5" value="b" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>B) They have no real commercial impact but help in formatting web catalogs.</span>
+</label>
+<label class="flex items-start space-x-3 p-3 bg-white border rounded-lg hover:bg-turquoise-50 cursor-pointer transition">
+<input type="radio" name="eq5" value="c" class="mt-0.5 text-turquoise-600 focus:ring-turquoise-500">
+<span>C) Rain encourages people to shop online, which makes physical store locations obsolete.</span>
+</label>
+</div>
+</div>
+
+</div>
+
+<button onclick="evaluateEconQuiz()" class="mt-8 w-full bg-orangeAccent-500 hover:bg-orangeAccent-600 text-white font-bold py-4 rounded-xl transition duration-200 shadow text-xs uppercase tracking-wider">
+Submit Logistics Answers
+</button>
+
+<div id="econFeedbackCard" class="mt-6 p-6 rounded-xl text-sm hidden"></div>
+</section>
+
+</main>
+</div>
+
+
+<!-- INTEGRATED NEXT STEPS & IMMEDIATE ACTION SECTION -->
+<section id="global-next-steps" class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-gray-200">
+<div class="bg-gradient-to-br from-cobalt-900 to-cobalt-700 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
+<div class="max-w-3xl">
+<span class="text-xs font-bold text-turquoise-100 uppercase tracking-widest block mb-2">After Module Completion</span>
+<h2 class="text-3xl font-bold tracking-tight">Your Immediate Professional Action Plan</h2>
+<p class="text-turquoise-100 text-sm mt-3 leading-relaxed">
+The true value of instructional training is immediate behavioral execution. Once you complete both modules, deploy the following protocols within your immediate office environment:
+</p>
+
+<!-- Dynamic Commitment Tracker -->
+<div class="mt-8 space-y-4">
+<h4 class="text-xs font-bold uppercase text-orangeAccent-500 tracking-wider">My Commitment Checklist</h4>
+
+<div class="flex items-start space-x-3 bg-white/10 p-4 rounded-xl border border-white/10 hover:bg-white/20 transition duration-200">
+<input type="checkbox" id="step-cb-1" onchange="updateCommitments()" class="mt-1 h-4 w-4 rounded border-gray-300 text-turquoise-600 focus:ring-turquoise-500 cursor-pointer">
+<label for="step-cb-1" class="text-xs cursor-pointer leading-relaxed">
+<strong>Empathy-first Communication:</strong> I will audit my direct communication structures—such as administrative briefing decks—removing metaphors and standardizing direct, visual milestone maps.
+</label>
+</div>
+
+<div class="flex items-start space-x-3 bg-white/10 p-4 rounded-xl border border-white/10 hover:bg-white/20 transition duration-200">
+<input type="checkbox" id="step-cb-2" onchange="updateCommitments()" class="mt-1 h-4 w-4 rounded border-gray-300 text-turquoise-600 focus:ring-turquoise-500 cursor-pointer">
+<label for="step-cb-2" class="text-xs cursor-pointer leading-relaxed">
+<strong>Recruitment Re-Architecture:</strong> I will integrate skills-focused assessments instead of performance-heavy interview strategies to capture top-tier candidate abilities.
+</label>
+</div>
+
+<div class="flex items-start space-x-3 bg-white/10 p-4 rounded-xl border border-white/10 hover:bg-white/20 transition duration-200">
+<input type="checkbox" id="step-cb-3" onchange="updateCommitments()" class="mt-1 h-4 w-4 rounded border-gray-300 text-turquoise-600 focus:ring-turquoise-500 cursor-pointer">
+<label for="step-cb-3" class="text-xs cursor-pointer leading-relaxed">
+<strong>Logistics Demography Audit:</strong> I will map target demographic indicators of client zones to adjust physical assets, matching geographical needs instead of forcing generic assortments.
+</label>
+</div>
+</div>
+
+<div class="mt-8 p-4 bg-white/5 rounded-xl border border-white/10 flex items-center justify-between text-xs">
+<span>Commitment Level: <strong id="commitmentScore" class="text-orangeAccent-500">0 of 3 Completed</strong></span>
+<button onclick="downloadActionPlan()" class="bg-orangeAccent-500 hover:bg-orangeAccent-600 text-white font-bold px-4 py-2 rounded-lg transition duration-200 text-xs">
+Export My Commitments Card
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- MODAL FOR CERTIFICATE GENERATION -->
+<div id="certModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+<div class="bg-white max-w-2xl w-full rounded-2xl p-8 shadow-2xl relative border-4 border-double border-cobalt-900 text-center">
+<button onclick="closeCertModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold">×</button>
+
+<div class="space-y-6">
+<span class="text-[10px] tracking-widest text-turquoise-700 font-bold uppercase block">Executive Leadership Academy</span>
+<h3 class="text-2xl font-bold text-cobalt-900 font-serif">Certificate of Completion</h3>
+
+<div class="h-0.5 w-32 bg-orangeAccent-500 mx-auto"></div>
+
+<p class="text-xs text-gray-500">This credential is proudly awarded to:</p>
+<p id="certNameDisplay" class="text-2xl font-black text-cobalt-900 border-b border-gray-300 max-w-sm mx-auto pb-2 focus:outline-none" contenteditable="true">John Doe, Director</p>
+<span class="text-[10px] text-gray-400 block italic">(Click name above to edit prior to exporting)</span>
+
+<p class="text-xs text-gray-700 max-w-md mx-auto leading-relaxed">
+For successfully completing all specialized, interactive instructional units focusing on <strong class="text-cobalt-900">Workplace Neurodivergence Accommodations</strong> and <strong class="text-turquoise-700">Economic Psychology & PAR logistics strategy</strong>.
+</p>
+
+<div class="flex items-center justify-around pt-6 text-left">
+<div>
+<span class="text-[9px] text-gray-400 uppercase tracking-wider block">Course Director</span>
+<span class="font-bold text-xs text-cobalt-900 font-serif italic">Anita Afriyie, MBA, MSEd</span>
+</div>
+<div>
+<span class="text-[9px] text-gray-400 uppercase tracking-wider block">Date Awarded</span>
+<span id="certDateDisplay" class="font-bold text-xs text-cobalt-900 font-serif"></span>
+</div>
+</div>
+
+<div class="pt-6 flex justify-center space-x-3">
+<button onclick="window.print()" class="bg-cobalt-900 hover:bg-cobalt-700 text-white font-bold px-6 py-2 rounded-lg text-xs transition">
+Print Certificate
+</button>
+<button onclick="closeCertModal()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold px-6 py-2 rounded-lg text-xs transition">
+Close Panel
+</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- PORTAL FOOTER -->
+<footer class="bg-cobalt-900 text-white mt-auto border-t-4 border-turquoise-700">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between text-xs text-turquoise-100 gap-4">
+<p>&copy; 2026 Executive L&D Suite. Academic Content Directed by Anita Afriyie, MBA, MSEd. All rights reserved.</p>
+<div class="flex space-x-6">
+<span class="hover:text-white cursor-pointer" onclick="goToDashboard()">Dashboard Hub</span>
+<span>|</span>
+<span class="text-orangeAccent-500 font-bold">Inclusive Enterprise Strategy</span>
+</div>
+</div>
+</footer>
+
+<!-- MAIN JS SCRIPTS -->
+<script>
+// Module Tracking State
+const learningState = {
+neuro: {
+'neuro-block-1': false,
+'neuro-block-2': false,
+'neuro-block-3': false,
+'neuro-block-4': false,
+'neuro-block-5': false, // Quiz Passed
+},
+econ: {
+'econ-block-1': false,
+'econ-block-2': false,
+'econ-block-3': false,
+'econ-block-4': false,
+'econ-block-5': false, // Quiz Passed
+}
+};
+
+// Simulated Logistics Profiles
+let activeEconProfile = 'coastal';
+
+// Route transitions
+function goToDashboard() {
+document.getElementById('dashboardView').classList.remove('hidden');
+document.getElementById('neuroCourseView').classList.add('hidden');
+document.getElementById('econCourseView').classList.add('hidden');
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function launchCourse(courseKey) {
+document.getElementById('dashboardView').classList.add('hidden');
+if (courseKey === 'neuro') {
+document.getElementById('neuroCourseView').classList.remove('hidden');
+document.getElementById('econCourseView').classList.add('hidden');
+updateProgressDisplay('neuro');
+} else {
+document.getElementById('neuroCourseView').classList.add('hidden');
+document.getElementById('econCourseView').classList.remove('hidden');
+updateProgressDisplay('econ');
+}
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Interactive scrolling inside course areas
+function scrollToBlock(blockId) {
+const element = document.getElementById(blockId);
+if (element) {
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+element.classList.remove('opacity-60');
+}
+}
+
+function scrollToNextStepsGlobal() {
+document.getElementById('global-next-steps').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function toggleRecruitDetail(type) {
+const container = document.getElementById('recruitDetailBox');
+container.classList.remove('hidden');
+if (type === 'questions') {
+container.innerHTML = `<strong>💬 Inclusive Interview Protocol:</strong> Instead of rapid abstract situational questions ("Tell me about a time you resolved structural chaos with no resources"), provide written, direct prompts 48 hours in advance. This shifts evaluation from sheer processing speed to calculated quality of strategy.`;
+} else if (type === 'skills') {
+container.innerHTML = `<strong>🛠 Actionable Competence Exercises:</strong> Minimize high-pressure performance panels. Shift weight to concrete asynchronous assessments (such as code construction, schedule generation, or writing evaluation briefs) reflecting the actual daily flow of operations.`;
+} else if (type === 'onboarding') {
+container.innerHTML = `<strong>🤝 Systemic Onboarding Integration:</strong> Redesign initial administrative pathways to offer visual checklists, recorded tutorial videos, and a dedicated workspace peer from Day 1 to minimize sensory overwhelm.`;
+}
+}
+
+// Complete reading checkpoints
+function markBlockComplete(course, blockId) {
+learningState[course][blockId] = true;
+
+// Update check symbol in navigation sidebar
+const checkMarker = document.getElementById(`chk-${blockId}`);
+if (checkMarker) {
+checkMarker.innerText = '✔';
+checkMarker.className = 'text-turquoise-600 font-bold';
+}
+
+const activeBtn = document.getElementById(`btn-${blockId}`);
+if (activeBtn) {
+activeBtn.classList.remove('text-cobalt-600', 'bg-cobalt-50', 'border-cobalt-100', 'text-turquoise-700', 'bg-turquoise-50', 'border-turquoise-100');
+activeBtn.classList.add('text-gray-500', 'bg-gray-100');
+}
+
+// Next block reveal
+const parts = blockId.split('-');
+const num = parseInt(parts[2]);
+const nextId = `${parts[0]}-${parts[1]}-${num + 1}`;
+const nextElement = document.getElementById(nextId);
+if (nextElement) {
+nextElement.classList.remove('opacity-60');
+scrollToBlock(nextId);
+}
+
+updateProgressDisplay(course);
+}
+
+// Progress updates
+function updateProgressDisplay(course) {
+const keys = Object.keys(learningState[course]);
+const done = keys.filter(k => learningState[course][k] === true).length;
+const pct = Math.round((done / keys.length) * 100);
+
+if (course === 'neuro') {
+document.getElementById('neuroProgressPercent').innerText = `${pct}%`;
+document.getElementById('neuroProgressBar').style.width = `${pct}%`;
+document.getElementById('c1-badge').innerText = `${pct}% Completed`;
+
+if (pct === 100) {
+document.getElementById('c1-badge').className = "text-xs font-bold uppercase tracking-widest text-turquoise-700 bg-turquoise-50 px-3 py-1 rounded-full";
+document.getElementById('dash-c1-status').innerText = "100% Completed";
+document.getElementById('dash-c1-status').className = "text-turquoise-600";
+} else if (pct > 0) {
+document.getElementById('dash-c1-status').innerText = "In Progress";
+document.getElementById('dash-c1-status').className = "text-orangeAccent-500";
+}
+} else {
+document.getElementById('econProgressPercent').innerText = `${pct}%`;
+document.getElementById('econProgressBar').style.width = `${pct}%`;
+document.getElementById('c2-badge').innerText = `${pct}% Completed`;
+
+if (pct === 100) {
+document.getElementById('c2-badge').className = "text-xs font-bold uppercase tracking-widest text-turquoise-700 bg-turquoise-50 px-3 py-1 rounded-full";
+document.getElementById('dash-c2-status').innerText = "100% Completed";
+document.getElementById('dash-c2-status').className = "text-turquoise-600";
+} else if (pct > 0) {
+document.getElementById('dash-c2-status').innerText = "In Progress";
+document.getElementById('dash-c2-status').className = "text-orangeAccent-500";
+}
+}
+
+// Check overall eligibility for Certificate
+const neuroAllDone = Object.values(learningState.neuro).every(v => v === true);
+const econAllDone = Object.values(learningState.econ).every(v => v === true);
+
+if (neuroAllDone && econAllDone) {
+const certBtn = document.getElementById('cert-trigger');
+certBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+certBtn.removeAttribute('disabled');
+}
+}
+
+// Quiz 1 Evaluation (Neurodivergence in the Workplace)
+function evaluateNeuroQuiz() {
+const answers = {
+nq1: document.querySelector('input[name="nq1"]:checked'),
+nq2: document.querySelector('input[name="nq2"]:checked'),
+nq3: document.querySelector('input[name="nq3"]:checked'),
+nq4: document.querySelector('input[name="nq4"]:checked'),
+nq5: document.querySelector('input[name="nq5"]:checked'),
+};
+
+// Check if all answered
+if (!answers.nq1 || !answers.nq2 || !answers.nq3 || !answers.nq4 || !answers.nq5) {
+const feedback = document.getElementById('neuroFeedbackCard');
+feedback.classList.remove('hidden');
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-orangeAccent-50 text-orangeAccent-600 border border-orangeAccent-500/20";
+feedback.innerHTML = `⚠️ <strong>Incomplete:</strong> Please answer all five evaluation questions before submitting.`;
+return;
+}
+
+let score = 0;
+if (answers.nq1.value === 'b') score++;
+if (answers.nq2.value === 'a') score++;
+if (answers.nq3.value === 'c') score++;
+if (answers.nq4.value === 'a') score++;
+if (answers.nq5.value === 'b') score++;
+
+const feedback = document.getElementById('neuroFeedbackCard');
+feedback.classList.remove('hidden');
+
+if (score >= 4) {
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-turquoise-50 text-turquoise-700 border border-turquoise-100";
+feedback.innerHTML = `🎉 <strong>Assessment Passed (${score}/5):</strong> Exceptional understanding. Your strategic perspective matches the inclusive paradigm defined by Anita Afriyie, MBA, MSEd. This block is now marked complete!`;
+markBlockComplete('neuro', 'neuro-block-5');
+} else {
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-orangeAccent-50 text-orangeAccent-600 border border-orangeAccent-500/20";
+feedback.innerHTML = `❌ <strong>Incomplete Score (${score}/5):</strong> Please review the course content and try again. A minimum score of 4 out of 5 is required to pass.`;
+}
+}
+
+// Quiz 2 Evaluation (Economic Psychology & PAR)
+function evaluateEconQuiz() {
+const answers = {
+eq1: document.querySelector('input[name="eq1"]:checked'),
+eq2: document.querySelector('input[name="eq2"]:checked'),
+eq3: document.querySelector('input[name="eq3"]:checked'),
+eq4: document.querySelector('input[name="eq4"]:checked'),
+eq5: document.querySelector('input[name="eq5"]:checked'),
+};
+
+if (!answers.eq1 || !answers.eq2 || !answers.eq3 || !answers.eq4 || !answers.eq5) {
+const feedback = document.getElementById('econFeedbackCard');
+feedback.classList.remove('hidden');
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-orangeAccent-50 text-orangeAccent-600 border border-orangeAccent-500/20";
+feedback.innerHTML = `⚠️ <strong>Incomplete:</strong> Please answer all five logistics assessment questions.`;
+return;
+}
+
+let score = 0;
+if (answers.eq1.value === 'b') score++;
+if (answers.eq2.value === 'b') score++;
+if (answers.eq3.value === 'b') score++;
+if (answers.eq4.value === 'b') score++;
+if (answers.eq5.value === 'a') score++;
+
+const feedback = document.getElementById('econFeedbackCard');
+feedback.classList.remove('hidden');
+
+if (score >= 4) {
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-turquoise-50 text-turquoise-700 border border-turquoise-100";
+feedback.innerHTML = `🎉 <strong>Assessment Passed (${score}/5):</strong> Superb logistic alignment execution. You have mastered Planning, Allocation, and Replenishment (PAR). This module is now marked complete!`;
+markBlockComplete('econ', 'econ-block-5');
+} else {
+feedback.className = "mt-6 p-6 rounded-xl text-xs bg-orangeAccent-50 text-orangeAccent-600 border border-orangeAccent-500/20";
+feedback.innerHTML = `❌ <strong>Review Recommended (${score}/5):</strong> Take a moment to review the geographical simulator variables and resubmit answers.`;
+}
+}
+
+
+// PAR SIMULATOR INTERACTIVE LOGIC
+function setEconProfile(prof) {
+activeEconProfile = prof;
+
+// Update interactive styling of selection triggers
+document.getElementById('sim-prof-coastal').className = "p-3 text-xs font-semibold rounded-xl border border-gray-200 bg-white text-gray-700 hover:bg-gray-100 transition-all";
+document.getElementById('sim-prof-transit').className = "p-3 text-xs font-semibold rounded-xl border border-gray-200 bg-white text-gray-700 hover:bg-gray-100 transition-all";
+document.getElementById('sim-prof-mountain').className = "p-3 text-xs font-semibold rounded-xl border border-gray-200 bg-white text-gray-700 hover:bg-gray-100 transition-all";
+
+if (prof === 'coastal') {
+document.getElementById('sim-prof-coastal').className = "p-3 bg-turquoise-600 text-white text-xs font-bold rounded-xl transition-all border border-transparent shadow";
+document.getElementById('premiumSlider').value = 70;
+document.getElementById('practicalSlider').value = 20;
+document.getElementById('climateSlider').value = 10;
+} else if (prof === 'transit') {
+document.getElementById('sim-prof-transit').className = "p-3 bg-turquoise-600 text-white text-xs font-bold rounded-xl transition-all border border-transparent shadow";
+document.getElementById('premiumSlider').value = 20;
+document.getElementById('practicalSlider').value = 70;
+document.getElementById('climateSlider').value = 10;
+} else if (prof === 'mountain') {
+document.getElementById('sim-prof-mountain').className = "p-3 bg-turquoise-600 text-white text-xs font-bold rounded-xl transition-all border border-transparent shadow";
+document.getElementById('premiumSlider').value = 15;
+document.getElementById('practicalSlider').value = 15;
+document.getElementById('climateSlider').value = 70;
+}
+
+updateEconSliders();
+calculateEconSimulator();
+}
+
+function updateEconSliders(origin) {
+let prem = parseInt(document.getElementById('premiumSlider').value);
+let prac = parseInt(document.getElementById('practicalSlider').value);
+let clim = parseInt(document.getElementById('climateSlider').value);
+
+// Enforce 100% total logic constraint
+let sum = prem + prac + clim;
+if (sum !== 100) {
+if (origin === 'premium') {
+let remainder = 100 - prem;
+let share = prac + clim || 1;
+prac = Math.round((prac / share) * remainder);
+clim = 100 - (prem + prac);
+} else if (origin === 'practical') {
+let remainder = 100 - prac;
+let share = prem + clim || 1;
+prem = Math.round((prem / share) * remainder);
+clim = 100 - (prac + prem);
+} else {
+let remainder = 100 - clim;
+let share = prem + prac || 1;
+prem = Math.round((prem / share) * remainder);
+prac = 100 - (clim + prem);
+}
+}
+
+// Re-assign safe bounds
+document.getElementById('premiumSlider').value = prem;
+document.getElementById('practicalSlider').value = prac;
+document.getElementById('climateSlider').value = clim;
+
+document.getElementById('premiumVal').innerText = `${prem}%`;
+document.getElementById('practicalVal').innerText = `${prac}%`;
+document.getElementById('climateVal').innerText = `${clim}%`;
+}
+
+function calculateEconSimulator() {
+const p = parseInt(document.getElementById('premiumSlider').value);
+const pr = parseInt(document.getElementById('practicalSlider').value);
+const c = parseInt(document.getElementById('climateSlider').value);
+
+let targetP = 0, targetPR = 0, targetC = 0;
+let label = '';
+
+if (activeEconProfile === 'coastal') {
+targetP = 70; targetPR = 20; targetC = 10;
+label = "This coastal demographic features extreme high income density, demanding rapid prestige cycles and status-aligned items.";
+} else if (activeEconProfile === 'transit') {
+targetP = 20; targetPR = 70; targetC = 10;
+label = "This rapid urban transit hub matches daily commuters prioritizing durability, packability, and reliable footwear accessories.";
+} else {
+targetP = 15; targetPR = 15; targetC = 70;
+label = "This alpine retail sector requires deep stocking in thermal, weatherproof, and protective outdoor utility apparel.";
+}
+
+// Calculate total delta from target parameters
+const delta = Math.abs(p - targetP) + Math.abs(pr - targetPR) + Math.abs(c - targetC);
+const rate = Math.max(0, 100 - delta);
+
+const ratingBox = document.getElementById('simScoreDisplay');
+const textBlock = document.getElementById('simFeedbackBox');
+textBlock.classList.remove('hidden');
+
+if (rate >= 85) {
+ratingBox.innerText = `Optimal Integration (${rate}%)`;
+ratingBox.className = "text-base font-black text-turquoise-600 mt-1";
+textBlock.className = "mt-4 p-4 rounded-xl text-xs leading-relaxed bg-turquoise-50 text-turquoise-900 border border-turquoise-200";
+textBlock.innerHTML = `🎉 <strong>Optimal Alignment!</strong> Your distribution strategy precisely matches regional demands. Your PAR profile prevents unsold excess and boosts direct sell-through speed.`;
+} else if (rate >= 60) {
+ratingBox.innerText = `Marginal Execution (${rate}%)`;
+ratingBox.className = "text-base font-black text-orangeAccent-500 mt-1";
+textBlock.className = "mt-4 p-4 rounded-xl text-xs leading-relaxed bg-orangeAccent-50 text-orangeAccent-600 border border-orangeAccent-500/20";
+textBlock.innerHTML = `⚠️ <strong>Partial Inefficiency:</strong> Your allocations are workable, but risk local shelf waste. Readjust slider distributions to closer match: <em>${label}</em>`;
+} else {
+ratingBox.innerText = `Critical Mismatch (${rate}%)`;
+ratingBox.className = "text-base font-black text-red-600 mt-1";
+textBlock.className = "mt-4 p-4 rounded-xl text-xs leading-relaxed bg-red-50 text-red-900 border border-red-200";
+textBlock.innerHTML = `❌ <strong>Severe Logistics Friction:</strong> This ratio severely mismatched regional expectations. You risk massive stock write-downs. Reconfigure to align with: <em>${label}</em>`;
+}
+}
+
+
+// Next Steps Commitment Engine
+function updateCommitments() {
+let checkedCount = 0;
+if (document.getElementById('step-cb-1').checked) checkedCount++;
+if (document.getElementById('step-cb-2').checked) checkedCount++;
+if (document.getElementById('step-cb-3').checked) checkedCount++;
+
+document.getElementById('commitmentScore').innerText = `${checkedCount} of 3 Completed`;
+}
+
+function downloadActionPlan() {
+const cb1 = document.getElementById('step-cb-1').checked ? "✔️ ADOPTED" : "❌ PENDING";
+const cb2 = document.getElementById('step-cb-2').checked ? "✔️ ADOPTED" : "❌ PENDING";
+const cb3 = document.getElementById('step-cb-3').checked ? "✔️ ADOPTED" : "❌ PENDING";
+
+const output = `========================================
+EXECUTIVE LEARNING PLAN - ANITA AFRIYIE ACADEMY
+========================================
+- Empathy-first Communication: [${cb1}]
+- Recruitment Re-Architecture: [${cb2}]
+- Logistics Demography Audit: [${cb3}]
+========================================`;
+
+// Use standard execution method for clipboard as per instructions
+const tempTextArea = document.createElement("textarea");
+tempTextArea.value = output;
+document.body.appendChild(tempTextArea);
+tempTextArea.select();
+document.execCommand("copy");
+document.body.removeChild(tempTextArea);
+
+alert("Your Commitments Action Plan has been copied to your clipboard!");
+}
+
+
+// CERTIFICATE DYNAMIC MANAGEMENT
+function generateCertificate() {
+const certModal = document.getElementById('certModal');
+certModal.classList.remove('hidden');
+certModal.classList.add('flex');
+
+// Populate localized date
+const today = new Date();
+document.getElementById('certDateDisplay').innerText = today.toLocaleDateString('en-US', {
+year: 'numeric', month: 'long', day: 'numeric'
+});
+}
+
+function closeCertModal() {
+const certModal = document.getElementById('certModal');
+certModal.classList.add('hidden');
+certModal.classList.remove('flex');
+}
+
+window.onload = function() {
+setEconProfile('coastal');
+}
+</script>
+</body>
+</html>
